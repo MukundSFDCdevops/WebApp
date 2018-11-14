@@ -1,1 +1,1 @@
-web: java -jar target/SampleConfig.war
+web: java -jar target/SampleConfig-1.war
