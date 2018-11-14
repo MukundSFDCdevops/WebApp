@@ -1,0 +1,50 @@
+{
+  "name": "Configurator",
+  "description": "This app provides Config integration to salesforce.",
+  "keywords": [
+    "productivity",
+    "java",
+    "salesforce",
+    "NIPR"
+  ],
+  "website": "https://config-mukund/",
+  "repository": "https://github.com/MukundSFDCdevops/WebApp",
+  "success_url": "/Welcome",
+  "env": {
+    "USERNAME": "",
+    "PASSWORD": "",
+    "NIPR_ALERT_ENDPOINT": "",
+    "NIPR_USERNAME": "",
+    "NIPR_PASSWORD": "",
+    "SALESFORCE_USERNAME": "",
+    "SALESFORCE_PASSWORD": "",
+    "SALESFORCE_CONSUMER_KEY": "",
+    "SALESFORCE_CONSUMER_SECRET": "",
+    "SALESFORCE_SANDBOX": "false",
+    "EMAIL_ALERT_RECIPIENT": "",
+    "EMAIL_ALERT_SENDER" : "support@heroku.com",
+    "RESYNC_DAYS_COUNT" : "5",
+    "PAUSE_SYNC" : "true",
+    "RETRY_INTERVAL" : "36000000",
+    "TZ": "America/Los_Angeles"
+  },
+  "formation": {
+      "web": {
+        "quantity": 1,
+        "size": "hobby"
+      }
+  },
+  "addons": [
+    {
+      "plan":"logentries:le_tryit"
+    },
+    {
+      "plan": "sendgrid:starter"
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "https://github.com/MukundSFDCdevops/WebApp"
+    }
+  ]
+}
