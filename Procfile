@@ -1,1 +1,1 @@
-web: java -jar target/SimpleWebApp.war
+web: java -jar target/ConfigWeb.war
